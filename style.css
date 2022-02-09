@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  padding: 2rem;
+}
+.keys {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  place-content: center;
+}
+.key {
+  padding: 2rem 1rem;
+  border-radius: 9px;
+  font-size: 3rem;
+  color: aliceblue;
+  background: #333333;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+.playing {
+  transform: scale(95%);
+}
